@@ -1,0 +1,217 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+
+.signup {
+  padding: 40px;
+  text-align: center;
+}
+
+.signup form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input[type="file"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #640f0f;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f1ebebe1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f8f7f7;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f1ebebe1;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+</style>
+
+<html>
+<head>
+  <title>Register Account</title>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">  
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="Login Page.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <section class="signup">
+        <div class="container">
+          <form id="register-form">
+
+            <div class="form-group">
+              <label for="profilePicture">Profile Picture</label>
+              <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="password-confirm">Confirm Password</label>
+              <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirm your password" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="birthday">Date of Birth</label>
+              <input type="date" id="birthday" name="birthday" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="sex">Sex</label>
+              <select id="sex" name="sex" required>
+                <option value="">Select your sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+                <label for="account">Account Type</label>
+                <select id="account" name="account" required>
+                  <option value="">Type of Account</option>
+                  <option value="male">Admin</option>
+                  <option value="female">User</option>  
+                </select>
+              </div>
+            
+            <div class="form-group">
+              <label for="blood-type">Blood Type</label>
+              <input type="text" id="blood-type" name="blood-type" placeholder="Enter your blood type" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="disabilities">Disabilities</label>
+              <textarea id="disabilities" name="disabilities" placeholder="Enter any disabilities or medical conditions"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Create Account</button>
+          </form>
+        </div>
+      </section>    
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>

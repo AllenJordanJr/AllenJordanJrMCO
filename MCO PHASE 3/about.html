@@ -1,0 +1,150 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #640f0f;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f1ebebe1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f8f7f7;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f1ebebe1;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logopic{
+    width: 30%;
+}
+
+.bio{
+        background-color: #d9d9d9;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+        width: 90%;
+        padding: 10px;
+        margin:auto;
+        white-space: nowrap;
+        overflow: hidden;
+        border-left:1em solid transparent;
+        border-right:1em solid transparent;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .picture{
+        float: left;
+        max-width: 30%;
+        padding: 10px;
+    }
+
+    .nameheader{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .bioparagraph{
+        line-height: 22.4px;
+        font-size: 20px;
+    }
+    .nameheader, .bioparagraph{
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+</style>
+
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="Login Page.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    
+    <div class="bio">
+        <img class="picture" src="profilepicture.jpg">
+        <p class="nameheader">Dr. Allen B. Jordan</p>
+        <br>
+        <p class="bioparagraph">Meet Dr. Allen B. Jordan, a distinguished dentist with an impressive career spanning several decades in the fields of general dentistry, cosmetic dentistry, and orthodontics. With his wealth of experience and unwavering commitment to patient care, Dr. Jordan has become a trusted name in the dental community.</p>
+        <p class="bioparagraph">Throughout his extensive career, Dr. Jordan has honed his skills in general dentistry, catering to patients of all ages with a wide range of oral health needs. From routine check-ups and cleanings to fillings, extractions, and gum disease treatments, he ensures that every patient receives personalized attention and top-quality care. Driven by his passion for creating beautiful smiles, Dr. Jordan has also mastered the art of cosmetic dentistry, offering transformative treatments such as teeth whitening, porcelain veneers, and dental bonding. With an artistic eye and meticulous attention to detail, he helps patients achieve the dazzling, confident smiles they've always dreamed of.</p>
+        <p class="bioparagraph">In addition to his expertise in general and cosmetic dentistry, Dr. Allen B. Jordan is a highly skilled orthodontist. With a deep understanding of dental and facial anatomy, he specializes in correcting misaligned bites, crooked teeth, and other orthodontic issues. Dr. Jordan is well-versed in the latest orthodontic techniques, including traditional braces and innovative clear aligner systems. He takes pride in providing patients with personalized treatment plans that address their specific orthodontic needs, resulting in beautifully aligned smiles and improved oral function.</p>
+        <p class="bioparagraph">With Dr. Allen B. Jordan's decades of experience, compassionate approach, and commitment to delivering exceptional dental care, you can trust that you and your family are in capable hands. Schedule a consultation today and experience the transformative power of his expertise in general dentistry, cosmetic dentistry, and orthodontics.</p>
+    </div>
+</body>
+</html>

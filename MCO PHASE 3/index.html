@@ -1,0 +1,192 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #640f0f;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f1ebebe1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f8f7f7;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f1ebebe1;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logopic{
+    width: 30%;
+}
+
+.services {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service img {
+  max-width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+</style>
+
+<html>
+<head>
+  <title>Allen B. Jordan Dental Services</title>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+          <h1 class="logo"></h1>  
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="Login Page.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      
+      <div class="service">
+        <img class="sevices" src="service1.png" alt="Service 1">
+        <h3>General Dentistry</h3>
+        <p>
+            Experience comprehensive dental care tailored to your unique needs and delivered with exceptional expertise and provide preventive, restorative, and cosmetic treatments for a healthy and confident smile.</p>
+      </div>
+      
+      <div class="service">
+        <img src="service2.png" alt="Service 2">
+        <h3>Cosmetic Dentistry</h3>
+        <p>
+            Transform your smile into a work of art with cosmetic dentistry services which combines artistry and advanced techniques to enhance your teeth's appearance and boost your self-confidence.</p>
+      </div>
+      
+      <div class="service">
+        <img src="service3.png" alt="Service 3">
+        <h3>Orthodontics</h3>
+        <p>Achieve a perfectly aligned and beautifully straight smile with exceptional orthodontic dentistry services which utilizes the latest techniques and state-of-the-art technology to create a harmonious bite and enhance your overall oral health.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Dr. Allen B. Jordan is a highly accomplished dentist with decades of experience in the fields of general dentistry, cosmetic dentistry, and orthodontics. With his extensive knowledge and expertise, Dr. Jordan has transformed countless smiles, providing comprehensive oral care that combines preventive, restorative, and cosmetic treatments to achieve optimal dental health and aesthetics. Having patients from all over the world, Dr. Jordan's commitment to excellence, as he combines his passion for dentistry with a gentle and compassionate approach, ensures personalized and exceptional care for each individual.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Dr. Allen B. Jordan Dental Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

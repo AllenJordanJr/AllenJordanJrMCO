@@ -1,0 +1,223 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navcontainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    background: #640f0f;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    padding: 10px 0;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+  }
+
+  nav a {
+    color: #f1ebebe1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #f8f7f7;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #f1ebebe1;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .logopic {
+    width: 30%;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("appointment_image.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #f1ebebe1;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .appointment {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .appointment form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+</style>
+
+<html>
+
+<head>
+  <title>Appointment Scheduling</title>
+</head>
+
+<body>
+  <header>
+    <div class="navcontainer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="Login Page.html">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Create an Appointment</h1>
+      <p>Please fill in the details below to schedule your appointment.</p>
+    </div>
+  </div>
+
+  <section class="appointment">
+    <div class="container">
+      <form id="appointment-form">
+        <div class="form-group">
+          <label for="phone">Number for Contacting</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Appointment Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Appointment Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter any additional information or concerns"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Schedule Appointment</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Dr. Allen B. Jordan Dental Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+  <!DOCTYPE html>
+
+  <script src="appointment.js"></script>
+
+</body>
+
+</html>

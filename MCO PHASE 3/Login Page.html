@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3b0404c4;
+}
+
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #640f0f;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f1ebebe1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f8f7f7;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f1ebebe1;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logopic{
+    width: 30%;
+}
+
+</style>
+
+<html>
+<head>
+  <title>Log-In Account</title>
+</head>
+<body>
+    <header>
+        <div class="navcontainer">
+          <h1 class="logo"></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="Login Page.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+  <div class="container">
+    <div class="login-container">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Log In">
+      </form>
+
+      <br>
+      Don't have an account? <a href="register.html">Sign up</a>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
