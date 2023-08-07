@@ -1,6 +1,6 @@
 # AllenJordanJrMCO
 
-Preliminary Requirements: 
+**Preliminary Requirements:**   
 
 Node.js
 
@@ -18,7 +18,7 @@ You may install Mongoose, Express and Multer on your Windows computer by running
 *npm init    
 npm install express mongoose multer*
 
-Setting up the website in your local device:
+**Setting up the website in your local device:**
 1. Download the files in the repository (make sure they are all located within the same folder)
 2. Open your command prompt
 3. In you command prompt enter "cd <path>" where <path> is the folder where the files are located.
