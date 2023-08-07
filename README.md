@@ -13,7 +13,7 @@ Multer
 *The Code will not work properly with any of these requirements missing*  
   
 You may install Mongoose, Express and Multer on your Windows computer by running this in your command prompt:   
-*npm init
+*npm init    
 npm install express mongoose multer*
 
 Setting up the website in your local device:
